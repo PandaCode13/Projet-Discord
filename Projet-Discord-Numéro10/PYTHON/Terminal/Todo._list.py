@@ -25,17 +25,18 @@ def DeleteListTache():
     except:
         print("Erreur")
 
-def marcarComoConcluida():
-    listarTarefa()
+def EditTache():
+    ViewListTache()
     try:
-        indiceTarefa = int(input("Selecione o número da tarefa que deseja marcar como concluída: "))
-        if 0 <= indiceTarefa < len(tarefas):
-            tarefas[indiceTarefa] += " (Concluída)"
-            print(f"Tarefa #{indiceTarefa} marcada como concluída")
+        indiceTache = int(input("Sélectionnez le numéro de la tache que vous voulez modifier: "))
+        if 0 <= indiceTache < len(taches):
+            newDescription = input("Insérez votre modification: ")
+            taches[indiceTache] = newDescription
+            print(f"Tache #{indiceTache} modifiée est un succès")
         else:
-            print("Índice de tarefa inválido")
+            print("L'indice de la tache est invalide")
     except ValueError:
-        print("Por favor, insira um número válido.")
+        print("S'il vous plait, saisissez un numéro validé")
 
 print("To Do List Application")
 while True : 
@@ -56,6 +57,8 @@ while True :
         DeleteListTache()
     elif choix == "3":
         ViewListTache()
+    elif choix == "4":
+        EditTache()
     elif choix == "5":
         print("Au revoir")
         break;
