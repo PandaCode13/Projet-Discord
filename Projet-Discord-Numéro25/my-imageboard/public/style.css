@@ -1,0 +1,51 @@
+body {
+    background-color: #f0e0d6; /* Couleur beige classique */
+    color: #800000; /* Texte marron/rouge foncé */
+    font-family: arial, helvetica, sans-serif;
+    margin: 20px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 28px;
+}
+
+#post-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background: #d6daf0; /* Couleur bleutée pour le form */
+    padding: 10px;
+    border: 1px solid #b7c5d9;
+}
+
+input, textarea {
+    margin-bottom: 5px;
+    border: 1px solid #a9a9a9;
+}
+
+.thread {
+    background: #d6daf0;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #b7c5d9;
+    overflow: hidden;
+}
+
+.thread img {
+    float: left;
+    margin-right: 20px;
+    max-width: 200px;
+    border: 2px solid #fff;
+}
+
+.author {
+    font-weight: bold;
+    color: #117743; /* Vert pour l'auteur */
+}

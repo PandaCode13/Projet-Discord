@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>/prog/ - Programming Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>/prog/ - Programmation</h1>
+    </header>
+
+    <section id="post-form">
+        <form id="threadForm">
+            <input type="text" id="author" placeholder="Nom (Optionnel)">
+            <textarea id="content" placeholder="Message..." required></textarea>
+            <input type="file" id="image" accept="image/*" required>
+            <button type="submit">Créer le Thread</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <main id="threads-container"></main>
+
+    <script src="script.js"></script>
+</body>
+</html>
